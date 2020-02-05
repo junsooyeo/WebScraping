@@ -1,6 +1,7 @@
-from indeed import extract_indeed_pages
-from indeed import extract_indeed_jobs
+from indeed import get_indeed_jobs
+from saramin import get_saramin_jobs
+#indeed_jobs = get_indeed_jobs()
 
-last_page = extract_indeed_pages()
-indeed_jobs = extract_indeed_jobs(last_page)
-print(indeed_jobs)
+saramin_jobs = get_saramin_jobs()
+
+print(saramin_jobs)
